@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fast Delivery</title>
+
+    <!--  bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!--  font Awesome Css  -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--    stylesheet for fonts-->
+    <link href="{% static 'Tracker/fonts/stylesheet.css' %}" rel="stylesheet">
+    <!-- Reset css-->
+    <link href="{% static 'Tracker/css/reset.css' %}" rel="stylesheet">
+
+    <!--slick css-->
+    <link href="{% static 'Tracker/css/slick.css' %}" rel="stylesheet">
+    <!--  owl-carousel css -->
+    <link href="{% static 'Tracker/css/owl.carousel.css' %}" rel="stylesheet">
+    <!--  YTPlayer css For Background Video -->
+    <link href="{% static 'Tracker/css/jquery.mb.YTPlayer.min.css' %}" rel="stylesheet">
+    <!--  style css  -->
+    <link rel="stylesheet" href="{% static 'Tracker/css/meanmenu.css' %}">
+    <link href="{% static 'Tracker/css/style.css' %}" rel="stylesheet">
+    <!--  Responsive Css  -->
+    <link href="{% static 'Tracker/css/responsive.css' %}" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+
+<body class="js">
+
+    <div id="preloader"></div>
+
+    <section class="about-us">
+        <div class="logo_menu" id="sticker">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-lg-2 col-sm-2 col-xs-6">
+                        <a href="#"><img src="{% static 'Tracker/img/logo.png' %}" alt="logod"></a>
+                    </div>
+                    <div class="col-md-6 col-xs-6 col-md-offset-1 col-sm-7 col-lg-offset-1 col-lg-6 mobMenuCol">
+                        <nav class="navbar">
+                            <ul class="nav navbar-nav navbar-right menu">
+                                <li><a href={% url 'home' %}>home </a>
+
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-4 col-lg-3 signup">
+                        <ul class="nav navbar-nav">
+                            <ul class="nav navbar-nav">
+
+                            <li><a href="/signin/">Login | Sign Up</a></li>
+                        </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about_us_area" id="about">
+        <div class="container">
+            <div class="row page-title">
+                <div class="col-md-6 col-sm-6 col-xs-6 text-left">
+                    <div class="about_us_content_title">
+                        <h2>about us</h2>
+                        <h5>no about us more</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 text-right">
+                    <div class="about_us_content_title">
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="about_us_content">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                        <a href="#">read more <span  class="fa fa-long-arrow-right"></span></a>
+                    </div>
+                </div>
+                <div class="col-md-offset-1 col-sm-6 col-md-5">
+                    <div class="about_car">
+                        <img src="{% static 'Tracker/img/about.png'%}" alt="car">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--start about bottom area-->
+    <section class="about-us-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12 col-lg-4">
+                    <div class="single-about-us-bottom">
+                        <h4>what we do</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 col-lg-4">
+                    <div class="single-about-us-bottom">
+                        <h4>our history</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12 col-lg-4">
+                    <div class="single-about-us-bottom">
+                        <h4>our mission</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="copyright-area">
+        <div class="container">
+            <div class="col-xs-12 col-sm-6 col-md-6 text-left">
+                <div class="footer-text">
+                    <p>Copyright 2016, All Rights Reserved</p>
+                </div>
+            </div>
+            <div class="col-xs-12  col-sm-6 col-md-6 text-right">
+                <div class="footer-text">
+                    <a href="#" class="fa fa-github"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--  jquery.min.js  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!--    bootstrap.min.js-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!--    jquery.sticky.js-->
+    <script src="{% static 'Tracker/js/jquery.sticky.js' %}"></script>
+    <!--  owl.carousel.min.js  -->
+    <script src="{% static 'Tracker/js/jquery.meanmenu.js' %}"></script>
+    <script src="{% static 'Tracker/js/owl.carousel.min.js' %}"></script>
+    <!--  jquery.mb.YTPlayer.min.js   -->
+    <script src="{% static 'Tracker/js/jquery.mb.YTPlayer.min.js' %}"></script>
+    <!--    slick.min.js-->
+    <script src="{% static 'Tracker/js/slick.min.js' %}"></script>
+    <!--    jquery.nav.js-->
+    <script src="{% static 'Tracker/js/jquery.nav.js' %}"></script>
+    <!--jquery waypoints js-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <!--    jquery counterup js-->
+    <script src="{% static 'Tracker/js/jquery.counterup.min.js' %}"></script>
+    <!--    main.js-->
+    <script src="{% static 'Tracker/js/main.js' %}"></script>
+</body>
+
+</html>
