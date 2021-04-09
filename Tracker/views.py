@@ -66,9 +66,9 @@ def map(request):
         #    print(item.val)
         driver_obj = db.child('Drivers').get()
         driver = driver_obj.val()
-        for user in driver_obj.each():
-            print(user.key())
-            print(user.val())
+        #for user in driver_obj.each():
+        #    print(user.key())
+        #    print(user.val())
         address_data = ads(location_data['Lat'],location_data['Long'])
         #distance_data =
         #print(address_data)
