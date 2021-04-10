@@ -17,8 +17,9 @@ browser = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"),o
 def ads(lat,lang):
     Dict = {}
     url = "http://maps.google.com/maps?q="+ str(lat) +"," + str(lang)
+
     browser.get(url)
-    time.sleep(2)
+    time.sleep(5)
     review_text = browser.find_elements_by_class_name("widget-pane-link")
     #print(review_text)
     address = [a.text for a in review_text][2]
