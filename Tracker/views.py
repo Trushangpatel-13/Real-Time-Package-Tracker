@@ -69,7 +69,7 @@ def map(request):
         #for user in driver_obj.each():
         #    print(user.key())
         #    print(user.val())
-        address_data = ads(location_data['Lat'],location_data['Long'])
+        #address_data = ads(location_data['Lat'],location_data['Long'])
         #distance_data =
         #print(address_data)
         package_data.update(location_data)
