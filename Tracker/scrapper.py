@@ -32,7 +32,7 @@ def ads(lat,lang):
     if(pincode.isdigit()):
         #print("YES")
         #print(pincode)
-        Dict["address"] = address[:index]
+        Dict["address"] = address[:-index-8]
         print(address[:index])
         Dict["pincode"] = pincode
         Dict["country"] = country
