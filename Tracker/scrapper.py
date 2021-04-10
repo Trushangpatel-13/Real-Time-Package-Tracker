@@ -24,12 +24,18 @@ def ads(lat,lang):
     #print(review_text)
     address = [a.text for a in review_text][2]
     #print(address)
-    pincode = address[-6:]
+    #pincode = address[-6:]
+
+    index = address[::-1].find(',')
+    pincode = address[-13:-index - 1]
+    country = address[-index + 1:]
     if(pincode.isdigit()):
         #print("YES")
         #print(pincode)
-        Dict["address"] = address[:-6]
+        Dict["address"] = address[:index]
+        print(address[:index])
         Dict["pincode"] = pincode
+        Dict["country"] = country
     else:
         Dict["address"] = address
 
