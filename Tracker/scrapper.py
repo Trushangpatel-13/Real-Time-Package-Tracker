@@ -36,6 +36,7 @@ def ads(lat,lang):
         print(address[:index])
         Dict["pincode"] = pincode
         Dict["country"] = country
+        Dict["url"] = url
     else:
         Dict["address"] = address
 
